@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script>
+    const sequence = [
+      "m",
+      "my",
+      "p",
+      "pe",
+      "per",
+      "pers",
+      "perso",
+      "person",
+      "persona",
+      "personal",
+      "persona",
+      "person",
+      "perso",
+      "pers",
+      "per",
+      "pe",
+      "p",
+      "",
+      "personal",
+      "",
+      "w",
+      "we",
+      "web",
+      "webs",
+      "websi",
+      "websit",
+      "website",
+      "",
+      "website",
+      "",
+      "personal",
+      "",
+      "website"
+    ];
+
+    let index = 0;
+
+    function updateTitle() {
+      document.title = sequence[index];
+      index = (index + 1) % sequence.length;
+    }
+
+    setInterval(updateTitle, 400); // change every 400ms, adjust speed here
+  </script>
+</head>
+<body>
+  <h1>Check the tab title for the animation!</h1>
+</body>
+</html>
